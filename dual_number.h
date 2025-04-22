@@ -1,4 +1,3 @@
-// dual_number.h
 #ifndef DUAL_NUMBER_H
 #define DUAL_NUMBER_H
 
@@ -10,16 +9,15 @@ private:
     float val, der;
 
 public:
-    // Constructors
+
     dual_number() : val(0.0f), der(0.0f) {}
     dual_number(float v) : val(v), der(0.0f) {}
     dual_number(float v, float d) : val(v), der(d) {}
 
-    // Accessors
     float value() const { return val; }
     float dual() const { return der; }
 
-    // Operator overloads
+    // overloads
     dual_number operator+(const dual_number& other) const {
         return dual_number(val + other.val, der + other.der);
     }
@@ -37,7 +35,7 @@ public:
         return dual_number(val / other.val, (der * other.val - val * other.der) / denom);
     }
 
-    // Math functions
+    // math functions
     friend dual_number sin(const dual_number& x) {
         return dual_number(std::sin(x.val), std::cos(x.val) * x.der);
     }
@@ -70,4 +68,4 @@ public:
     }
 };
 
-#endif // DUAL_NUMBER_H
+#endif

@@ -1,4 +1,3 @@
-// dual_vector.h
 #ifndef DUAL_VECTOR_H
 #define DUAL_VECTOR_H
 
@@ -29,4 +28,4 @@ public:
     }
 };
 
-#endif // DUAL_VECTOR_H
+#endif
