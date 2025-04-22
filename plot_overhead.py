@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 functions = {
     "sin(x)": "SIN",
-    "exp(x*x)": "EXP^2",
+    "exp(x*x)": "EXP2",
     "ln(x+1) + tanh(x)": "LOGTANH",
     "sigmoid(exp(x))": "SIGEXP",
     "x*sin(x) + x*exp(x)": "XSINEXP"

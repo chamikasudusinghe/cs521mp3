@@ -1,0 +1,22 @@
+layer,acc after 90% prune
+conv1,85.38
+layer1.0.conv1,95.27
+layer1.0.conv2,95.14
+layer1.1.conv1,95.3
+layer1.1.conv2,95.19
+layer2.0.conv1,92.77
+layer2.0.conv2,93.86
+layer2.0.shortcut.0,95.02
+layer2.1.conv1,94.88
+layer2.1.conv2,94.73
+layer3.0.conv1,87.0
+layer3.0.conv2,92.39
+layer3.0.shortcut.0,95.23
+layer3.1.conv1,80.93
+layer3.1.conv2,94.62
+layer4.0.conv1,93.7
+layer4.0.conv2,94.81
+layer4.0.shortcut.0,95.29
+layer4.1.conv1,94.66
+layer4.1.conv2,95.29
+linear,95.17

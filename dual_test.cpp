@@ -18,7 +18,7 @@ float scalar_func(float x) {
         return std::log(x + 1.0f) + std::tanh(x);
     #elif defined(SIGEXP)
         return 1.0f / (1.0f + std::exp(-std::exp(x)));
-    #elif defined(XCOMBO)
+    #elif defined(XSINEXP)
         return x * std::sin(x) + x * std::exp(x);
     #else
         return x;
@@ -36,7 +36,7 @@ dual_number dual_func(dual_number x) {
         return ln(x + dual_number(1.0f)) + tanh(x);
     #elif defined(SIGEXP)
         return sigmoid(exp(x));
-    #elif defined(XCOMBO)
+    #elif defined(XSINEXP)
         return x * sin(x) + x * exp(x);
     #else
         return x;

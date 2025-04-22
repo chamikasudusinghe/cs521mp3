@@ -1,0 +1,674 @@
+HloModule jit_apply, entry_computation_layout={(f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[64]{0}, /*index=5*/f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[128]{0}, f32[128]{0}, /*index=10*/f32[128]{0}, f32[128]{0}, f32[128]{0}, f32[128]{0}, f32[128]{0}, /*index=15*/f32[128]{0}, f32[128]{0}, f32[128]{0}, f32[256]{0}, f32[256]{0}, /*index=20*/f32[256]{0}, f32[256]{0}, f32[256]{0}, f32[256]{0}, f32[256]{0}, /*index=25*/f32[256]{0}, f32[256]{0}, f32[256]{0}, f32[512]{0}, f32[512]{0}, /*index=30*/f32[512]{0}, f32[512]{0}, f32[512]{0}, f32[512]{0}, f32[512]{0}, /*index=35*/f32[512]{0}, f32[512]{0}, f32[512]{0}, f32[64]{0}, f32[64]{0}, /*index=40*/f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[3,3,64,64]{3,2,1,0}, /*index=45*/f32[3,3,64,64]{3,2,1,0}, f32[64]{0}, f32[64]{0}, f32[64]{0}, f32[64]{0}, /*index=50*/f32[3,3,64,64]{3,2,1,0}, f32[3,3,64,64]{3,2,1,0}, f32[128]{0}, f32[128]{0}, f32[128]{0}, /*index=55*/f32[128]{0}, f32[128]{0}, f32[128]{0}, f32[3,3,64,128]{3,2,1,0}, f32[3,3,128,128]{3,2,1,0}, /*index=60*/f32[1,1,64,128]{3,2,1,0}, f32[128]{0}, f32[128]{0}, f32[128]{0}, f32[128]{0}, /*index=65*/f32[3,3,128,128]{3,2,1,0}, f32[3,3,128,128]{3,2,1,0}, f32[256]{0}, f32[256]{0}, f32[256]{0}, /*index=70*/f32[256]{0}, f32[256]{0}, f32[256]{0}, f32[3,3,128,256]{3,2,1,0}, f32[3,3,256,256]{3,2,1,0}, /*index=75*/f32[1,1,128,256]{3,2,1,0}, f32[256]{0}, f32[256]{0}, f32[256]{0}, f32[256]{0}, /*index=80*/f32[3,3,256,256]{3,2,1,0}, f32[3,3,256,256]{3,2,1,0}, f32[512]{0}, f32[512]{0}, f32[512]{0}, /*index=85*/f32[512]{0}, f32[512]{0}, f32[512]{0}, f32[3,3,256,512]{3,2,1,0}, f32[3,3,512,512]{3,2,1,0}, /*index=90*/f32[1,1,256,512]{3,2,1,0}, f32[512]{0}, f32[512]{0}, f32[512]{0}, f32[512]{0}, /*index=95*/f32[3,3,512,512]{3,2,1,0}, f32[3,3,512,512]{3,2,1,0}, f32[64]{0}, f32[64]{0}, f32[3,3,3,64]{3,2,1,0}, /*index=100*/f32[10]{0}, f32[512,10]{1,0}, f32[1,32,32,3]{3,2,1,0})->f32[1,10]{1,0}}
+
+relu.135 {
+  Arg_0.136 = f32[1,32,32,64]{3,2,1,0} parameter(0)
+  constant.137 = f32[] constant(0)
+  broadcast.138 = f32[1,32,32,64]{3,2,1,0} broadcast(constant.137), dimensions={}
+  ROOT maximum.139 = f32[1,32,32,64]{3,2,1,0} maximum(Arg_0.136, broadcast.138)
+}
+
+relu.161 {
+  Arg_0.162 = f32[1,32,32,64]{3,2,1,0} parameter(0)
+  constant.163 = f32[] constant(0)
+  broadcast.164 = f32[1,32,32,64]{3,2,1,0} broadcast(constant.163), dimensions={}
+  ROOT maximum.165 = f32[1,32,32,64]{3,2,1,0} maximum(Arg_0.162, broadcast.164)
+}
+
+relu.188 {
+  Arg_0.189 = f32[1,32,32,64]{3,2,1,0} parameter(0)
+  constant.190 = f32[] constant(0)
+  broadcast.191 = f32[1,32,32,64]{3,2,1,0} broadcast(constant.190), dimensions={}
+  ROOT maximum.192 = f32[1,32,32,64]{3,2,1,0} maximum(Arg_0.189, broadcast.191)
+}
+
+relu.214 {
+  Arg_0.215 = f32[1,32,32,64]{3,2,1,0} parameter(0)
+  constant.216 = f32[] constant(0)
+  broadcast.217 = f32[1,32,32,64]{3,2,1,0} broadcast(constant.216), dimensions={}
+  ROOT maximum.218 = f32[1,32,32,64]{3,2,1,0} maximum(Arg_0.215, broadcast.217)
+}
+
+relu.241 {
+  Arg_0.242 = f32[1,32,32,64]{3,2,1,0} parameter(0)
+  constant.243 = f32[] constant(0)
+  broadcast.244 = f32[1,32,32,64]{3,2,1,0} broadcast(constant.243), dimensions={}
+  ROOT maximum.245 = f32[1,32,32,64]{3,2,1,0} maximum(Arg_0.242, broadcast.244)
+}
+
+relu_0.267 {
+  Arg_0.268 = f32[1,16,16,128]{3,2,1,0} parameter(0)
+  constant.269 = f32[] constant(0)
+  broadcast.270 = f32[1,16,16,128]{3,2,1,0} broadcast(constant.269), dimensions={}
+  ROOT maximum.271 = f32[1,16,16,128]{3,2,1,0} maximum(Arg_0.268, broadcast.270)
+}
+
+relu_0.314 {
+  Arg_0.315 = f32[1,16,16,128]{3,2,1,0} parameter(0)
+  constant.316 = f32[] constant(0)
+  broadcast.317 = f32[1,16,16,128]{3,2,1,0} broadcast(constant.316), dimensions={}
+  ROOT maximum.318 = f32[1,16,16,128]{3,2,1,0} maximum(Arg_0.315, broadcast.317)
+}
+
+relu_0.340 {
+  Arg_0.341 = f32[1,16,16,128]{3,2,1,0} parameter(0)
+  constant.342 = f32[] constant(0)
+  broadcast.343 = f32[1,16,16,128]{3,2,1,0} broadcast(constant.342), dimensions={}
+  ROOT maximum.344 = f32[1,16,16,128]{3,2,1,0} maximum(Arg_0.341, broadcast.343)
+}
+
+relu_0.367 {
+  Arg_0.368 = f32[1,16,16,128]{3,2,1,0} parameter(0)
+  constant.369 = f32[] constant(0)
+  broadcast.370 = f32[1,16,16,128]{3,2,1,0} broadcast(constant.369), dimensions={}
+  ROOT maximum.371 = f32[1,16,16,128]{3,2,1,0} maximum(Arg_0.368, broadcast.370)
+}
+
+relu_1.393 {
+  Arg_0.394 = f32[1,8,8,256]{3,2,1,0} parameter(0)
+  constant.395 = f32[] constant(0)
+  broadcast.396 = f32[1,8,8,256]{3,2,1,0} broadcast(constant.395), dimensions={}
+  ROOT maximum.397 = f32[1,8,8,256]{3,2,1,0} maximum(Arg_0.394, broadcast.396)
+}
+
+relu_1.440 {
+  Arg_0.441 = f32[1,8,8,256]{3,2,1,0} parameter(0)
+  constant.442 = f32[] constant(0)
+  broadcast.443 = f32[1,8,8,256]{3,2,1,0} broadcast(constant.442), dimensions={}
+  ROOT maximum.444 = f32[1,8,8,256]{3,2,1,0} maximum(Arg_0.441, broadcast.443)
+}
+
+relu_1.466 {
+  Arg_0.467 = f32[1,8,8,256]{3,2,1,0} parameter(0)
+  constant.468 = f32[] constant(0)
+  broadcast.469 = f32[1,8,8,256]{3,2,1,0} broadcast(constant.468), dimensions={}
+  ROOT maximum.470 = f32[1,8,8,256]{3,2,1,0} maximum(Arg_0.467, broadcast.469)
+}
+
+relu_1.493 {
+  Arg_0.494 = f32[1,8,8,256]{3,2,1,0} parameter(0)
+  constant.495 = f32[] constant(0)
+  broadcast.496 = f32[1,8,8,256]{3,2,1,0} broadcast(constant.495), dimensions={}
+  ROOT maximum.497 = f32[1,8,8,256]{3,2,1,0} maximum(Arg_0.494, broadcast.496)
+}
+
+relu_2.519 {
+  Arg_0.520 = f32[1,4,4,512]{3,2,1,0} parameter(0)
+  constant.521 = f32[] constant(0)
+  broadcast.522 = f32[1,4,4,512]{3,2,1,0} broadcast(constant.521), dimensions={}
+  ROOT maximum.523 = f32[1,4,4,512]{3,2,1,0} maximum(Arg_0.520, broadcast.522)
+}
+
+relu_2.566 {
+  Arg_0.567 = f32[1,4,4,512]{3,2,1,0} parameter(0)
+  constant.568 = f32[] constant(0)
+  broadcast.569 = f32[1,4,4,512]{3,2,1,0} broadcast(constant.568), dimensions={}
+  ROOT maximum.570 = f32[1,4,4,512]{3,2,1,0} maximum(Arg_0.567, broadcast.569)
+}
+
+relu_2.592 {
+  Arg_0.593 = f32[1,4,4,512]{3,2,1,0} parameter(0)
+  constant.594 = f32[] constant(0)
+  broadcast.595 = f32[1,4,4,512]{3,2,1,0} broadcast(constant.594), dimensions={}
+  ROOT maximum.596 = f32[1,4,4,512]{3,2,1,0} maximum(Arg_0.593, broadcast.595)
+}
+
+relu_2.619 {
+  Arg_0.620 = f32[1,4,4,512]{3,2,1,0} parameter(0)
+  constant.621 = f32[] constant(0)
+  broadcast.622 = f32[1,4,4,512]{3,2,1,0} broadcast(constant.621), dimensions={}
+  ROOT maximum.623 = f32[1,4,4,512]{3,2,1,0} maximum(Arg_0.620, broadcast.622)
+}
+
+region_0.625 {
+  Arg_0.626 = f32[] parameter(0)
+  Arg_1.627 = f32[] parameter(1)
+  ROOT add.628 = f32[] add(Arg_0.626, Arg_1.627)
+}
+
+ENTRY main.634 {
+  Arg_102.103 = f32[1,32,32,3]{3,2,1,0} parameter(102)
+  Arg_99.100 = f32[3,3,3,64]{3,2,1,0} parameter(99)
+  convolution.115 = f32[1,32,32,64]{3,2,1,0} convolution(Arg_102.103, Arg_99.100), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_38.39 = f32[64]{0} parameter(38)
+  reshape.116 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_38.39)
+  broadcast.118 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.116), dimensions={0,1,2,3}
+  reshape.119 = f32[1,64]{1,0} reshape(broadcast.118)
+  broadcast.120 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.119), dimensions={0,3}
+  subtract.121 = f32[1,32,32,64]{3,2,1,0} subtract(convolution.115, broadcast.120)
+  Arg_39.40 = f32[64]{0} parameter(39)
+  reshape.117 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_39.40)
+  constant.112 = f32[] constant(1e-05)
+  broadcast.113 = f32[1,1,1,64]{3,2,1,0} broadcast(constant.112), dimensions={}
+  add.122 = f32[1,1,1,64]{3,2,1,0} add(reshape.117, broadcast.113)
+  rsqrt.123 = f32[1,1,1,64]{3,2,1,0} rsqrt(add.122)
+  Arg_98.99 = f32[64]{0} parameter(98)
+  reshape.124 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_98.99)
+  multiply.125 = f32[1,1,1,64]{3,2,1,0} multiply(rsqrt.123, reshape.124)
+  broadcast.126 = f32[1,1,1,64]{3,2,1,0} broadcast(multiply.125), dimensions={0,1,2,3}
+  reshape.127 = f32[1,64]{1,0} reshape(broadcast.126)
+  broadcast.128 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.127), dimensions={0,3}
+  multiply.129 = f32[1,32,32,64]{3,2,1,0} multiply(subtract.121, broadcast.128)
+  Arg_97.98 = f32[64]{0} parameter(97)
+  reshape.130 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_97.98)
+  broadcast.131 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.130), dimensions={0,1,2,3}
+  reshape.132 = f32[1,64]{1,0} reshape(broadcast.131)
+  broadcast.133 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.132), dimensions={0,3}
+  add.134 = f32[1,32,32,64]{3,2,1,0} add(multiply.129, broadcast.133)
+  call.140 = f32[1,32,32,64]{3,2,1,0} call(add.134), to_apply=relu.135
+  Arg_44.45 = f32[3,3,64,64]{3,2,1,0} parameter(44)
+  convolution.141 = f32[1,32,32,64]{3,2,1,0} convolution(call.140, Arg_44.45), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_0.1 = f32[64]{0} parameter(0)
+  reshape.142 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_0.1)
+  broadcast.144 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.142), dimensions={0,1,2,3}
+  reshape.145 = f32[1,64]{1,0} reshape(broadcast.144)
+  broadcast.146 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.145), dimensions={0,3}
+  subtract.147 = f32[1,32,32,64]{3,2,1,0} subtract(convolution.141, broadcast.146)
+  Arg_1.2 = f32[64]{0} parameter(1)
+  reshape.143 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_1.2)
+  add.148 = f32[1,1,1,64]{3,2,1,0} add(reshape.143, broadcast.113)
+  rsqrt.149 = f32[1,1,1,64]{3,2,1,0} rsqrt(add.148)
+  Arg_41.42 = f32[64]{0} parameter(41)
+  reshape.150 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_41.42)
+  multiply.151 = f32[1,1,1,64]{3,2,1,0} multiply(rsqrt.149, reshape.150)
+  broadcast.152 = f32[1,1,1,64]{3,2,1,0} broadcast(multiply.151), dimensions={0,1,2,3}
+  reshape.153 = f32[1,64]{1,0} reshape(broadcast.152)
+  broadcast.154 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.153), dimensions={0,3}
+  multiply.155 = f32[1,32,32,64]{3,2,1,0} multiply(subtract.147, broadcast.154)
+  Arg_40.41 = f32[64]{0} parameter(40)
+  reshape.156 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_40.41)
+  broadcast.157 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.156), dimensions={0,1,2,3}
+  reshape.158 = f32[1,64]{1,0} reshape(broadcast.157)
+  broadcast.159 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.158), dimensions={0,3}
+  add.160 = f32[1,32,32,64]{3,2,1,0} add(multiply.155, broadcast.159)
+  call.166 = f32[1,32,32,64]{3,2,1,0} call(add.160), to_apply=relu.161
+  Arg_45.46 = f32[3,3,64,64]{3,2,1,0} parameter(45)
+  convolution.167 = f32[1,32,32,64]{3,2,1,0} convolution(call.166, Arg_45.46), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_2.3 = f32[64]{0} parameter(2)
+  reshape.168 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_2.3)
+  broadcast.170 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.168), dimensions={0,1,2,3}
+  reshape.171 = f32[1,64]{1,0} reshape(broadcast.170)
+  broadcast.172 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.171), dimensions={0,3}
+  subtract.173 = f32[1,32,32,64]{3,2,1,0} subtract(convolution.167, broadcast.172)
+  Arg_3.4 = f32[64]{0} parameter(3)
+  reshape.169 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_3.4)
+  add.174 = f32[1,1,1,64]{3,2,1,0} add(reshape.169, broadcast.113)
+  rsqrt.175 = f32[1,1,1,64]{3,2,1,0} rsqrt(add.174)
+  Arg_43.44 = f32[64]{0} parameter(43)
+  reshape.176 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_43.44)
+  multiply.177 = f32[1,1,1,64]{3,2,1,0} multiply(rsqrt.175, reshape.176)
+  broadcast.178 = f32[1,1,1,64]{3,2,1,0} broadcast(multiply.177), dimensions={0,1,2,3}
+  reshape.179 = f32[1,64]{1,0} reshape(broadcast.178)
+  broadcast.180 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.179), dimensions={0,3}
+  multiply.181 = f32[1,32,32,64]{3,2,1,0} multiply(subtract.173, broadcast.180)
+  Arg_42.43 = f32[64]{0} parameter(42)
+  reshape.182 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_42.43)
+  broadcast.183 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.182), dimensions={0,1,2,3}
+  reshape.184 = f32[1,64]{1,0} reshape(broadcast.183)
+  broadcast.185 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.184), dimensions={0,3}
+  add.186 = f32[1,32,32,64]{3,2,1,0} add(multiply.181, broadcast.185)
+  add.187 = f32[1,32,32,64]{3,2,1,0} add(add.186, call.140)
+  call.193 = f32[1,32,32,64]{3,2,1,0} call(add.187), to_apply=relu.188
+  Arg_50.51 = f32[3,3,64,64]{3,2,1,0} parameter(50)
+  convolution.194 = f32[1,32,32,64]{3,2,1,0} convolution(call.193, Arg_50.51), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_4.5 = f32[64]{0} parameter(4)
+  reshape.195 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_4.5)
+  broadcast.197 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.195), dimensions={0,1,2,3}
+  reshape.198 = f32[1,64]{1,0} reshape(broadcast.197)
+  broadcast.199 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.198), dimensions={0,3}
+  subtract.200 = f32[1,32,32,64]{3,2,1,0} subtract(convolution.194, broadcast.199)
+  Arg_5.6 = f32[64]{0} parameter(5)
+  reshape.196 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_5.6)
+  add.201 = f32[1,1,1,64]{3,2,1,0} add(reshape.196, broadcast.113)
+  rsqrt.202 = f32[1,1,1,64]{3,2,1,0} rsqrt(add.201)
+  Arg_47.48 = f32[64]{0} parameter(47)
+  reshape.203 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_47.48)
+  multiply.204 = f32[1,1,1,64]{3,2,1,0} multiply(rsqrt.202, reshape.203)
+  broadcast.205 = f32[1,1,1,64]{3,2,1,0} broadcast(multiply.204), dimensions={0,1,2,3}
+  reshape.206 = f32[1,64]{1,0} reshape(broadcast.205)
+  broadcast.207 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.206), dimensions={0,3}
+  multiply.208 = f32[1,32,32,64]{3,2,1,0} multiply(subtract.200, broadcast.207)
+  Arg_46.47 = f32[64]{0} parameter(46)
+  reshape.209 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_46.47)
+  broadcast.210 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.209), dimensions={0,1,2,3}
+  reshape.211 = f32[1,64]{1,0} reshape(broadcast.210)
+  broadcast.212 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.211), dimensions={0,3}
+  add.213 = f32[1,32,32,64]{3,2,1,0} add(multiply.208, broadcast.212)
+  call.219 = f32[1,32,32,64]{3,2,1,0} call(add.213), to_apply=relu.214
+  Arg_51.52 = f32[3,3,64,64]{3,2,1,0} parameter(51)
+  convolution.220 = f32[1,32,32,64]{3,2,1,0} convolution(call.219, Arg_51.52), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_6.7 = f32[64]{0} parameter(6)
+  reshape.221 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_6.7)
+  broadcast.223 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.221), dimensions={0,1,2,3}
+  reshape.224 = f32[1,64]{1,0} reshape(broadcast.223)
+  broadcast.225 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.224), dimensions={0,3}
+  subtract.226 = f32[1,32,32,64]{3,2,1,0} subtract(convolution.220, broadcast.225)
+  Arg_7.8 = f32[64]{0} parameter(7)
+  reshape.222 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_7.8)
+  add.227 = f32[1,1,1,64]{3,2,1,0} add(reshape.222, broadcast.113)
+  rsqrt.228 = f32[1,1,1,64]{3,2,1,0} rsqrt(add.227)
+  Arg_49.50 = f32[64]{0} parameter(49)
+  reshape.229 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_49.50)
+  multiply.230 = f32[1,1,1,64]{3,2,1,0} multiply(rsqrt.228, reshape.229)
+  broadcast.231 = f32[1,1,1,64]{3,2,1,0} broadcast(multiply.230), dimensions={0,1,2,3}
+  reshape.232 = f32[1,64]{1,0} reshape(broadcast.231)
+  broadcast.233 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.232), dimensions={0,3}
+  multiply.234 = f32[1,32,32,64]{3,2,1,0} multiply(subtract.226, broadcast.233)
+  Arg_48.49 = f32[64]{0} parameter(48)
+  reshape.235 = f32[1,1,1,64]{3,2,1,0} reshape(Arg_48.49)
+  broadcast.236 = f32[1,1,1,64]{3,2,1,0} broadcast(reshape.235), dimensions={0,1,2,3}
+  reshape.237 = f32[1,64]{1,0} reshape(broadcast.236)
+  broadcast.238 = f32[1,32,32,64]{3,2,1,0} broadcast(reshape.237), dimensions={0,3}
+  add.239 = f32[1,32,32,64]{3,2,1,0} add(multiply.234, broadcast.238)
+  add.240 = f32[1,32,32,64]{3,2,1,0} add(add.239, call.193)
+  call.246 = f32[1,32,32,64]{3,2,1,0} call(add.240), to_apply=relu.241
+  Arg_58.59 = f32[3,3,64,128]{3,2,1,0} parameter(58)
+  convolution.247 = f32[1,16,16,128]{3,2,1,0} convolution(call.246, Arg_58.59), window={size=3x3 stride=2x2 pad=0_1x0_1}, dim_labels=b01f_01io->b01f
+  Arg_8.9 = f32[128]{0} parameter(8)
+  reshape.248 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_8.9)
+  broadcast.250 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.248), dimensions={0,1,2,3}
+  reshape.251 = f32[1,128]{1,0} reshape(broadcast.250)
+  broadcast.252 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.251), dimensions={0,3}
+  subtract.253 = f32[1,16,16,128]{3,2,1,0} subtract(convolution.247, broadcast.252)
+  Arg_9.10 = f32[128]{0} parameter(9)
+  reshape.249 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_9.10)
+  constant.110 = f32[] constant(1e-05)
+  broadcast.111 = f32[1,1,1,128]{3,2,1,0} broadcast(constant.110), dimensions={}
+  add.254 = f32[1,1,1,128]{3,2,1,0} add(reshape.249, broadcast.111)
+  rsqrt.255 = f32[1,1,1,128]{3,2,1,0} rsqrt(add.254)
+  Arg_53.54 = f32[128]{0} parameter(53)
+  reshape.256 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_53.54)
+  multiply.257 = f32[1,1,1,128]{3,2,1,0} multiply(rsqrt.255, reshape.256)
+  broadcast.258 = f32[1,1,1,128]{3,2,1,0} broadcast(multiply.257), dimensions={0,1,2,3}
+  reshape.259 = f32[1,128]{1,0} reshape(broadcast.258)
+  broadcast.260 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.259), dimensions={0,3}
+  multiply.261 = f32[1,16,16,128]{3,2,1,0} multiply(subtract.253, broadcast.260)
+  Arg_52.53 = f32[128]{0} parameter(52)
+  reshape.262 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_52.53)
+  broadcast.263 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.262), dimensions={0,1,2,3}
+  reshape.264 = f32[1,128]{1,0} reshape(broadcast.263)
+  broadcast.265 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.264), dimensions={0,3}
+  add.266 = f32[1,16,16,128]{3,2,1,0} add(multiply.261, broadcast.265)
+  call.272 = f32[1,16,16,128]{3,2,1,0} call(add.266), to_apply=relu_0.267
+  Arg_59.60 = f32[3,3,128,128]{3,2,1,0} parameter(59)
+  convolution.273 = f32[1,16,16,128]{3,2,1,0} convolution(call.272, Arg_59.60), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_10.11 = f32[128]{0} parameter(10)
+  reshape.274 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_10.11)
+  broadcast.276 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.274), dimensions={0,1,2,3}
+  reshape.277 = f32[1,128]{1,0} reshape(broadcast.276)
+  broadcast.278 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.277), dimensions={0,3}
+  subtract.279 = f32[1,16,16,128]{3,2,1,0} subtract(convolution.273, broadcast.278)
+  Arg_11.12 = f32[128]{0} parameter(11)
+  reshape.275 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_11.12)
+  add.280 = f32[1,1,1,128]{3,2,1,0} add(reshape.275, broadcast.111)
+  rsqrt.281 = f32[1,1,1,128]{3,2,1,0} rsqrt(add.280)
+  Arg_55.56 = f32[128]{0} parameter(55)
+  reshape.282 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_55.56)
+  multiply.283 = f32[1,1,1,128]{3,2,1,0} multiply(rsqrt.281, reshape.282)
+  broadcast.284 = f32[1,1,1,128]{3,2,1,0} broadcast(multiply.283), dimensions={0,1,2,3}
+  reshape.285 = f32[1,128]{1,0} reshape(broadcast.284)
+  broadcast.286 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.285), dimensions={0,3}
+  multiply.287 = f32[1,16,16,128]{3,2,1,0} multiply(subtract.279, broadcast.286)
+  Arg_54.55 = f32[128]{0} parameter(54)
+  reshape.288 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_54.55)
+  broadcast.289 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.288), dimensions={0,1,2,3}
+  reshape.290 = f32[1,128]{1,0} reshape(broadcast.289)
+  broadcast.291 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.290), dimensions={0,3}
+  add.292 = f32[1,16,16,128]{3,2,1,0} add(multiply.287, broadcast.291)
+  Arg_60.61 = f32[1,1,64,128]{3,2,1,0} parameter(60)
+  convolution.293 = f32[1,16,16,128]{3,2,1,0} convolution(call.246, Arg_60.61), window={size=1x1 stride=2x2}, dim_labels=b01f_01io->b01f
+  Arg_12.13 = f32[128]{0} parameter(12)
+  reshape.294 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_12.13)
+  broadcast.296 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.294), dimensions={0,1,2,3}
+  reshape.297 = f32[1,128]{1,0} reshape(broadcast.296)
+  broadcast.298 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.297), dimensions={0,3}
+  subtract.299 = f32[1,16,16,128]{3,2,1,0} subtract(convolution.293, broadcast.298)
+  Arg_13.14 = f32[128]{0} parameter(13)
+  reshape.295 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_13.14)
+  add.300 = f32[1,1,1,128]{3,2,1,0} add(reshape.295, broadcast.111)
+  rsqrt.301 = f32[1,1,1,128]{3,2,1,0} rsqrt(add.300)
+  Arg_57.58 = f32[128]{0} parameter(57)
+  reshape.302 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_57.58)
+  multiply.303 = f32[1,1,1,128]{3,2,1,0} multiply(rsqrt.301, reshape.302)
+  broadcast.304 = f32[1,1,1,128]{3,2,1,0} broadcast(multiply.303), dimensions={0,1,2,3}
+  reshape.305 = f32[1,128]{1,0} reshape(broadcast.304)
+  broadcast.306 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.305), dimensions={0,3}
+  multiply.307 = f32[1,16,16,128]{3,2,1,0} multiply(subtract.299, broadcast.306)
+  Arg_56.57 = f32[128]{0} parameter(56)
+  reshape.308 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_56.57)
+  broadcast.309 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.308), dimensions={0,1,2,3}
+  reshape.310 = f32[1,128]{1,0} reshape(broadcast.309)
+  broadcast.311 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.310), dimensions={0,3}
+  add.312 = f32[1,16,16,128]{3,2,1,0} add(multiply.307, broadcast.311)
+  add.313 = f32[1,16,16,128]{3,2,1,0} add(add.292, add.312)
+  call.319 = f32[1,16,16,128]{3,2,1,0} call(add.313), to_apply=relu_0.314
+  Arg_65.66 = f32[3,3,128,128]{3,2,1,0} parameter(65)
+  convolution.320 = f32[1,16,16,128]{3,2,1,0} convolution(call.319, Arg_65.66), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_14.15 = f32[128]{0} parameter(14)
+  reshape.321 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_14.15)
+  broadcast.323 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.321), dimensions={0,1,2,3}
+  reshape.324 = f32[1,128]{1,0} reshape(broadcast.323)
+  broadcast.325 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.324), dimensions={0,3}
+  subtract.326 = f32[1,16,16,128]{3,2,1,0} subtract(convolution.320, broadcast.325)
+  Arg_15.16 = f32[128]{0} parameter(15)
+  reshape.322 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_15.16)
+  add.327 = f32[1,1,1,128]{3,2,1,0} add(reshape.322, broadcast.111)
+  rsqrt.328 = f32[1,1,1,128]{3,2,1,0} rsqrt(add.327)
+  Arg_62.63 = f32[128]{0} parameter(62)
+  reshape.329 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_62.63)
+  multiply.330 = f32[1,1,1,128]{3,2,1,0} multiply(rsqrt.328, reshape.329)
+  broadcast.331 = f32[1,1,1,128]{3,2,1,0} broadcast(multiply.330), dimensions={0,1,2,3}
+  reshape.332 = f32[1,128]{1,0} reshape(broadcast.331)
+  broadcast.333 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.332), dimensions={0,3}
+  multiply.334 = f32[1,16,16,128]{3,2,1,0} multiply(subtract.326, broadcast.333)
+  Arg_61.62 = f32[128]{0} parameter(61)
+  reshape.335 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_61.62)
+  broadcast.336 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.335), dimensions={0,1,2,3}
+  reshape.337 = f32[1,128]{1,0} reshape(broadcast.336)
+  broadcast.338 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.337), dimensions={0,3}
+  add.339 = f32[1,16,16,128]{3,2,1,0} add(multiply.334, broadcast.338)
+  call.345 = f32[1,16,16,128]{3,2,1,0} call(add.339), to_apply=relu_0.340
+  Arg_66.67 = f32[3,3,128,128]{3,2,1,0} parameter(66)
+  convolution.346 = f32[1,16,16,128]{3,2,1,0} convolution(call.345, Arg_66.67), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_16.17 = f32[128]{0} parameter(16)
+  reshape.347 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_16.17)
+  broadcast.349 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.347), dimensions={0,1,2,3}
+  reshape.350 = f32[1,128]{1,0} reshape(broadcast.349)
+  broadcast.351 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.350), dimensions={0,3}
+  subtract.352 = f32[1,16,16,128]{3,2,1,0} subtract(convolution.346, broadcast.351)
+  Arg_17.18 = f32[128]{0} parameter(17)
+  reshape.348 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_17.18)
+  add.353 = f32[1,1,1,128]{3,2,1,0} add(reshape.348, broadcast.111)
+  rsqrt.354 = f32[1,1,1,128]{3,2,1,0} rsqrt(add.353)
+  Arg_64.65 = f32[128]{0} parameter(64)
+  reshape.355 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_64.65)
+  multiply.356 = f32[1,1,1,128]{3,2,1,0} multiply(rsqrt.354, reshape.355)
+  broadcast.357 = f32[1,1,1,128]{3,2,1,0} broadcast(multiply.356), dimensions={0,1,2,3}
+  reshape.358 = f32[1,128]{1,0} reshape(broadcast.357)
+  broadcast.359 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.358), dimensions={0,3}
+  multiply.360 = f32[1,16,16,128]{3,2,1,0} multiply(subtract.352, broadcast.359)
+  Arg_63.64 = f32[128]{0} parameter(63)
+  reshape.361 = f32[1,1,1,128]{3,2,1,0} reshape(Arg_63.64)
+  broadcast.362 = f32[1,1,1,128]{3,2,1,0} broadcast(reshape.361), dimensions={0,1,2,3}
+  reshape.363 = f32[1,128]{1,0} reshape(broadcast.362)
+  broadcast.364 = f32[1,16,16,128]{3,2,1,0} broadcast(reshape.363), dimensions={0,3}
+  add.365 = f32[1,16,16,128]{3,2,1,0} add(multiply.360, broadcast.364)
+  add.366 = f32[1,16,16,128]{3,2,1,0} add(add.365, call.319)
+  call.372 = f32[1,16,16,128]{3,2,1,0} call(add.366), to_apply=relu_0.367
+  Arg_73.74 = f32[3,3,128,256]{3,2,1,0} parameter(73)
+  convolution.373 = f32[1,8,8,256]{3,2,1,0} convolution(call.372, Arg_73.74), window={size=3x3 stride=2x2 pad=0_1x0_1}, dim_labels=b01f_01io->b01f
+  Arg_18.19 = f32[256]{0} parameter(18)
+  reshape.374 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_18.19)
+  broadcast.376 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.374), dimensions={0,1,2,3}
+  reshape.377 = f32[1,256]{1,0} reshape(broadcast.376)
+  broadcast.378 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.377), dimensions={0,3}
+  subtract.379 = f32[1,8,8,256]{3,2,1,0} subtract(convolution.373, broadcast.378)
+  Arg_19.20 = f32[256]{0} parameter(19)
+  reshape.375 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_19.20)
+  constant.108 = f32[] constant(1e-05)
+  broadcast.109 = f32[1,1,1,256]{3,2,1,0} broadcast(constant.108), dimensions={}
+  add.380 = f32[1,1,1,256]{3,2,1,0} add(reshape.375, broadcast.109)
+  rsqrt.381 = f32[1,1,1,256]{3,2,1,0} rsqrt(add.380)
+  Arg_68.69 = f32[256]{0} parameter(68)
+  reshape.382 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_68.69)
+  multiply.383 = f32[1,1,1,256]{3,2,1,0} multiply(rsqrt.381, reshape.382)
+  broadcast.384 = f32[1,1,1,256]{3,2,1,0} broadcast(multiply.383), dimensions={0,1,2,3}
+  reshape.385 = f32[1,256]{1,0} reshape(broadcast.384)
+  broadcast.386 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.385), dimensions={0,3}
+  multiply.387 = f32[1,8,8,256]{3,2,1,0} multiply(subtract.379, broadcast.386)
+  Arg_67.68 = f32[256]{0} parameter(67)
+  reshape.388 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_67.68)
+  broadcast.389 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.388), dimensions={0,1,2,3}
+  reshape.390 = f32[1,256]{1,0} reshape(broadcast.389)
+  broadcast.391 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.390), dimensions={0,3}
+  add.392 = f32[1,8,8,256]{3,2,1,0} add(multiply.387, broadcast.391)
+  call.398 = f32[1,8,8,256]{3,2,1,0} call(add.392), to_apply=relu_1.393
+  Arg_74.75 = f32[3,3,256,256]{3,2,1,0} parameter(74)
+  convolution.399 = f32[1,8,8,256]{3,2,1,0} convolution(call.398, Arg_74.75), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_20.21 = f32[256]{0} parameter(20)
+  reshape.400 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_20.21)
+  broadcast.402 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.400), dimensions={0,1,2,3}
+  reshape.403 = f32[1,256]{1,0} reshape(broadcast.402)
+  broadcast.404 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.403), dimensions={0,3}
+  subtract.405 = f32[1,8,8,256]{3,2,1,0} subtract(convolution.399, broadcast.404)
+  Arg_21.22 = f32[256]{0} parameter(21)
+  reshape.401 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_21.22)
+  add.406 = f32[1,1,1,256]{3,2,1,0} add(reshape.401, broadcast.109)
+  rsqrt.407 = f32[1,1,1,256]{3,2,1,0} rsqrt(add.406)
+  Arg_70.71 = f32[256]{0} parameter(70)
+  reshape.408 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_70.71)
+  multiply.409 = f32[1,1,1,256]{3,2,1,0} multiply(rsqrt.407, reshape.408)
+  broadcast.410 = f32[1,1,1,256]{3,2,1,0} broadcast(multiply.409), dimensions={0,1,2,3}
+  reshape.411 = f32[1,256]{1,0} reshape(broadcast.410)
+  broadcast.412 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.411), dimensions={0,3}
+  multiply.413 = f32[1,8,8,256]{3,2,1,0} multiply(subtract.405, broadcast.412)
+  Arg_69.70 = f32[256]{0} parameter(69)
+  reshape.414 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_69.70)
+  broadcast.415 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.414), dimensions={0,1,2,3}
+  reshape.416 = f32[1,256]{1,0} reshape(broadcast.415)
+  broadcast.417 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.416), dimensions={0,3}
+  add.418 = f32[1,8,8,256]{3,2,1,0} add(multiply.413, broadcast.417)
+  Arg_75.76 = f32[1,1,128,256]{3,2,1,0} parameter(75)
+  convolution.419 = f32[1,8,8,256]{3,2,1,0} convolution(call.372, Arg_75.76), window={size=1x1 stride=2x2}, dim_labels=b01f_01io->b01f
+  Arg_22.23 = f32[256]{0} parameter(22)
+  reshape.420 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_22.23)
+  broadcast.422 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.420), dimensions={0,1,2,3}
+  reshape.423 = f32[1,256]{1,0} reshape(broadcast.422)
+  broadcast.424 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.423), dimensions={0,3}
+  subtract.425 = f32[1,8,8,256]{3,2,1,0} subtract(convolution.419, broadcast.424)
+  Arg_23.24 = f32[256]{0} parameter(23)
+  reshape.421 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_23.24)
+  add.426 = f32[1,1,1,256]{3,2,1,0} add(reshape.421, broadcast.109)
+  rsqrt.427 = f32[1,1,1,256]{3,2,1,0} rsqrt(add.426)
+  Arg_72.73 = f32[256]{0} parameter(72)
+  reshape.428 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_72.73)
+  multiply.429 = f32[1,1,1,256]{3,2,1,0} multiply(rsqrt.427, reshape.428)
+  broadcast.430 = f32[1,1,1,256]{3,2,1,0} broadcast(multiply.429), dimensions={0,1,2,3}
+  reshape.431 = f32[1,256]{1,0} reshape(broadcast.430)
+  broadcast.432 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.431), dimensions={0,3}
+  multiply.433 = f32[1,8,8,256]{3,2,1,0} multiply(subtract.425, broadcast.432)
+  Arg_71.72 = f32[256]{0} parameter(71)
+  reshape.434 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_71.72)
+  broadcast.435 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.434), dimensions={0,1,2,3}
+  reshape.436 = f32[1,256]{1,0} reshape(broadcast.435)
+  broadcast.437 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.436), dimensions={0,3}
+  add.438 = f32[1,8,8,256]{3,2,1,0} add(multiply.433, broadcast.437)
+  add.439 = f32[1,8,8,256]{3,2,1,0} add(add.418, add.438)
+  call.445 = f32[1,8,8,256]{3,2,1,0} call(add.439), to_apply=relu_1.440
+  Arg_80.81 = f32[3,3,256,256]{3,2,1,0} parameter(80)
+  convolution.446 = f32[1,8,8,256]{3,2,1,0} convolution(call.445, Arg_80.81), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_24.25 = f32[256]{0} parameter(24)
+  reshape.447 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_24.25)
+  broadcast.449 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.447), dimensions={0,1,2,3}
+  reshape.450 = f32[1,256]{1,0} reshape(broadcast.449)
+  broadcast.451 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.450), dimensions={0,3}
+  subtract.452 = f32[1,8,8,256]{3,2,1,0} subtract(convolution.446, broadcast.451)
+  Arg_25.26 = f32[256]{0} parameter(25)
+  reshape.448 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_25.26)
+  add.453 = f32[1,1,1,256]{3,2,1,0} add(reshape.448, broadcast.109)
+  rsqrt.454 = f32[1,1,1,256]{3,2,1,0} rsqrt(add.453)
+  Arg_77.78 = f32[256]{0} parameter(77)
+  reshape.455 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_77.78)
+  multiply.456 = f32[1,1,1,256]{3,2,1,0} multiply(rsqrt.454, reshape.455)
+  broadcast.457 = f32[1,1,1,256]{3,2,1,0} broadcast(multiply.456), dimensions={0,1,2,3}
+  reshape.458 = f32[1,256]{1,0} reshape(broadcast.457)
+  broadcast.459 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.458), dimensions={0,3}
+  multiply.460 = f32[1,8,8,256]{3,2,1,0} multiply(subtract.452, broadcast.459)
+  Arg_76.77 = f32[256]{0} parameter(76)
+  reshape.461 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_76.77)
+  broadcast.462 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.461), dimensions={0,1,2,3}
+  reshape.463 = f32[1,256]{1,0} reshape(broadcast.462)
+  broadcast.464 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.463), dimensions={0,3}
+  add.465 = f32[1,8,8,256]{3,2,1,0} add(multiply.460, broadcast.464)
+  call.471 = f32[1,8,8,256]{3,2,1,0} call(add.465), to_apply=relu_1.466
+  Arg_81.82 = f32[3,3,256,256]{3,2,1,0} parameter(81)
+  convolution.472 = f32[1,8,8,256]{3,2,1,0} convolution(call.471, Arg_81.82), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_26.27 = f32[256]{0} parameter(26)
+  reshape.473 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_26.27)
+  broadcast.475 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.473), dimensions={0,1,2,3}
+  reshape.476 = f32[1,256]{1,0} reshape(broadcast.475)
+  broadcast.477 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.476), dimensions={0,3}
+  subtract.478 = f32[1,8,8,256]{3,2,1,0} subtract(convolution.472, broadcast.477)
+  Arg_27.28 = f32[256]{0} parameter(27)
+  reshape.474 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_27.28)
+  add.479 = f32[1,1,1,256]{3,2,1,0} add(reshape.474, broadcast.109)
+  rsqrt.480 = f32[1,1,1,256]{3,2,1,0} rsqrt(add.479)
+  Arg_79.80 = f32[256]{0} parameter(79)
+  reshape.481 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_79.80)
+  multiply.482 = f32[1,1,1,256]{3,2,1,0} multiply(rsqrt.480, reshape.481)
+  broadcast.483 = f32[1,1,1,256]{3,2,1,0} broadcast(multiply.482), dimensions={0,1,2,3}
+  reshape.484 = f32[1,256]{1,0} reshape(broadcast.483)
+  broadcast.485 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.484), dimensions={0,3}
+  multiply.486 = f32[1,8,8,256]{3,2,1,0} multiply(subtract.478, broadcast.485)
+  Arg_78.79 = f32[256]{0} parameter(78)
+  reshape.487 = f32[1,1,1,256]{3,2,1,0} reshape(Arg_78.79)
+  broadcast.488 = f32[1,1,1,256]{3,2,1,0} broadcast(reshape.487), dimensions={0,1,2,3}
+  reshape.489 = f32[1,256]{1,0} reshape(broadcast.488)
+  broadcast.490 = f32[1,8,8,256]{3,2,1,0} broadcast(reshape.489), dimensions={0,3}
+  add.491 = f32[1,8,8,256]{3,2,1,0} add(multiply.486, broadcast.490)
+  add.492 = f32[1,8,8,256]{3,2,1,0} add(add.491, call.445)
+  call.498 = f32[1,8,8,256]{3,2,1,0} call(add.492), to_apply=relu_1.493
+  Arg_88.89 = f32[3,3,256,512]{3,2,1,0} parameter(88)
+  convolution.499 = f32[1,4,4,512]{3,2,1,0} convolution(call.498, Arg_88.89), window={size=3x3 stride=2x2 pad=0_1x0_1}, dim_labels=b01f_01io->b01f
+  Arg_28.29 = f32[512]{0} parameter(28)
+  reshape.500 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_28.29)
+  broadcast.502 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.500), dimensions={0,1,2,3}
+  reshape.503 = f32[1,512]{1,0} reshape(broadcast.502)
+  broadcast.504 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.503), dimensions={0,3}
+  subtract.505 = f32[1,4,4,512]{3,2,1,0} subtract(convolution.499, broadcast.504)
+  Arg_29.30 = f32[512]{0} parameter(29)
+  reshape.501 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_29.30)
+  constant.106 = f32[] constant(1e-05)
+  broadcast.107 = f32[1,1,1,512]{3,2,1,0} broadcast(constant.106), dimensions={}
+  add.506 = f32[1,1,1,512]{3,2,1,0} add(reshape.501, broadcast.107)
+  rsqrt.507 = f32[1,1,1,512]{3,2,1,0} rsqrt(add.506)
+  Arg_83.84 = f32[512]{0} parameter(83)
+  reshape.508 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_83.84)
+  multiply.509 = f32[1,1,1,512]{3,2,1,0} multiply(rsqrt.507, reshape.508)
+  broadcast.510 = f32[1,1,1,512]{3,2,1,0} broadcast(multiply.509), dimensions={0,1,2,3}
+  reshape.511 = f32[1,512]{1,0} reshape(broadcast.510)
+  broadcast.512 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.511), dimensions={0,3}
+  multiply.513 = f32[1,4,4,512]{3,2,1,0} multiply(subtract.505, broadcast.512)
+  Arg_82.83 = f32[512]{0} parameter(82)
+  reshape.514 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_82.83)
+  broadcast.515 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.514), dimensions={0,1,2,3}
+  reshape.516 = f32[1,512]{1,0} reshape(broadcast.515)
+  broadcast.517 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.516), dimensions={0,3}
+  add.518 = f32[1,4,4,512]{3,2,1,0} add(multiply.513, broadcast.517)
+  call.524 = f32[1,4,4,512]{3,2,1,0} call(add.518), to_apply=relu_2.519
+  Arg_89.90 = f32[3,3,512,512]{3,2,1,0} parameter(89)
+  convolution.525 = f32[1,4,4,512]{3,2,1,0} convolution(call.524, Arg_89.90), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_30.31 = f32[512]{0} parameter(30)
+  reshape.526 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_30.31)
+  broadcast.528 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.526), dimensions={0,1,2,3}
+  reshape.529 = f32[1,512]{1,0} reshape(broadcast.528)
+  broadcast.530 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.529), dimensions={0,3}
+  subtract.531 = f32[1,4,4,512]{3,2,1,0} subtract(convolution.525, broadcast.530)
+  Arg_31.32 = f32[512]{0} parameter(31)
+  reshape.527 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_31.32)
+  add.532 = f32[1,1,1,512]{3,2,1,0} add(reshape.527, broadcast.107)
+  rsqrt.533 = f32[1,1,1,512]{3,2,1,0} rsqrt(add.532)
+  Arg_85.86 = f32[512]{0} parameter(85)
+  reshape.534 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_85.86)
+  multiply.535 = f32[1,1,1,512]{3,2,1,0} multiply(rsqrt.533, reshape.534)
+  broadcast.536 = f32[1,1,1,512]{3,2,1,0} broadcast(multiply.535), dimensions={0,1,2,3}
+  reshape.537 = f32[1,512]{1,0} reshape(broadcast.536)
+  broadcast.538 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.537), dimensions={0,3}
+  multiply.539 = f32[1,4,4,512]{3,2,1,0} multiply(subtract.531, broadcast.538)
+  Arg_84.85 = f32[512]{0} parameter(84)
+  reshape.540 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_84.85)
+  broadcast.541 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.540), dimensions={0,1,2,3}
+  reshape.542 = f32[1,512]{1,0} reshape(broadcast.541)
+  broadcast.543 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.542), dimensions={0,3}
+  add.544 = f32[1,4,4,512]{3,2,1,0} add(multiply.539, broadcast.543)
+  Arg_90.91 = f32[1,1,256,512]{3,2,1,0} parameter(90)
+  convolution.545 = f32[1,4,4,512]{3,2,1,0} convolution(call.498, Arg_90.91), window={size=1x1 stride=2x2}, dim_labels=b01f_01io->b01f
+  Arg_32.33 = f32[512]{0} parameter(32)
+  reshape.546 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_32.33)
+  broadcast.548 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.546), dimensions={0,1,2,3}
+  reshape.549 = f32[1,512]{1,0} reshape(broadcast.548)
+  broadcast.550 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.549), dimensions={0,3}
+  subtract.551 = f32[1,4,4,512]{3,2,1,0} subtract(convolution.545, broadcast.550)
+  Arg_33.34 = f32[512]{0} parameter(33)
+  reshape.547 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_33.34)
+  add.552 = f32[1,1,1,512]{3,2,1,0} add(reshape.547, broadcast.107)
+  rsqrt.553 = f32[1,1,1,512]{3,2,1,0} rsqrt(add.552)
+  Arg_87.88 = f32[512]{0} parameter(87)
+  reshape.554 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_87.88)
+  multiply.555 = f32[1,1,1,512]{3,2,1,0} multiply(rsqrt.553, reshape.554)
+  broadcast.556 = f32[1,1,1,512]{3,2,1,0} broadcast(multiply.555), dimensions={0,1,2,3}
+  reshape.557 = f32[1,512]{1,0} reshape(broadcast.556)
+  broadcast.558 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.557), dimensions={0,3}
+  multiply.559 = f32[1,4,4,512]{3,2,1,0} multiply(subtract.551, broadcast.558)
+  Arg_86.87 = f32[512]{0} parameter(86)
+  reshape.560 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_86.87)
+  broadcast.561 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.560), dimensions={0,1,2,3}
+  reshape.562 = f32[1,512]{1,0} reshape(broadcast.561)
+  broadcast.563 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.562), dimensions={0,3}
+  add.564 = f32[1,4,4,512]{3,2,1,0} add(multiply.559, broadcast.563)
+  add.565 = f32[1,4,4,512]{3,2,1,0} add(add.544, add.564)
+  call.571 = f32[1,4,4,512]{3,2,1,0} call(add.565), to_apply=relu_2.566
+  Arg_95.96 = f32[3,3,512,512]{3,2,1,0} parameter(95)
+  convolution.572 = f32[1,4,4,512]{3,2,1,0} convolution(call.571, Arg_95.96), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_34.35 = f32[512]{0} parameter(34)
+  reshape.573 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_34.35)
+  broadcast.575 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.573), dimensions={0,1,2,3}
+  reshape.576 = f32[1,512]{1,0} reshape(broadcast.575)
+  broadcast.577 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.576), dimensions={0,3}
+  subtract.578 = f32[1,4,4,512]{3,2,1,0} subtract(convolution.572, broadcast.577)
+  Arg_35.36 = f32[512]{0} parameter(35)
+  reshape.574 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_35.36)
+  add.579 = f32[1,1,1,512]{3,2,1,0} add(reshape.574, broadcast.107)
+  rsqrt.580 = f32[1,1,1,512]{3,2,1,0} rsqrt(add.579)
+  Arg_92.93 = f32[512]{0} parameter(92)
+  reshape.581 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_92.93)
+  multiply.582 = f32[1,1,1,512]{3,2,1,0} multiply(rsqrt.580, reshape.581)
+  broadcast.583 = f32[1,1,1,512]{3,2,1,0} broadcast(multiply.582), dimensions={0,1,2,3}
+  reshape.584 = f32[1,512]{1,0} reshape(broadcast.583)
+  broadcast.585 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.584), dimensions={0,3}
+  multiply.586 = f32[1,4,4,512]{3,2,1,0} multiply(subtract.578, broadcast.585)
+  Arg_91.92 = f32[512]{0} parameter(91)
+  reshape.587 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_91.92)
+  broadcast.588 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.587), dimensions={0,1,2,3}
+  reshape.589 = f32[1,512]{1,0} reshape(broadcast.588)
+  broadcast.590 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.589), dimensions={0,3}
+  add.591 = f32[1,4,4,512]{3,2,1,0} add(multiply.586, broadcast.590)
+  call.597 = f32[1,4,4,512]{3,2,1,0} call(add.591), to_apply=relu_2.592
+  Arg_96.97 = f32[3,3,512,512]{3,2,1,0} parameter(96)
+  convolution.598 = f32[1,4,4,512]{3,2,1,0} convolution(call.597, Arg_96.97), window={size=3x3 pad=1_1x1_1}, dim_labels=b01f_01io->b01f
+  Arg_36.37 = f32[512]{0} parameter(36)
+  reshape.599 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_36.37)
+  broadcast.601 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.599), dimensions={0,1,2,3}
+  reshape.602 = f32[1,512]{1,0} reshape(broadcast.601)
+  broadcast.603 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.602), dimensions={0,3}
+  subtract.604 = f32[1,4,4,512]{3,2,1,0} subtract(convolution.598, broadcast.603)
+  Arg_37.38 = f32[512]{0} parameter(37)
+  reshape.600 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_37.38)
+  add.605 = f32[1,1,1,512]{3,2,1,0} add(reshape.600, broadcast.107)
+  rsqrt.606 = f32[1,1,1,512]{3,2,1,0} rsqrt(add.605)
+  Arg_94.95 = f32[512]{0} parameter(94)
+  reshape.607 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_94.95)
+  multiply.608 = f32[1,1,1,512]{3,2,1,0} multiply(rsqrt.606, reshape.607)
+  broadcast.609 = f32[1,1,1,512]{3,2,1,0} broadcast(multiply.608), dimensions={0,1,2,3}
+  reshape.610 = f32[1,512]{1,0} reshape(broadcast.609)
+  broadcast.611 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.610), dimensions={0,3}
+  multiply.612 = f32[1,4,4,512]{3,2,1,0} multiply(subtract.604, broadcast.611)
+  Arg_93.94 = f32[512]{0} parameter(93)
+  reshape.613 = f32[1,1,1,512]{3,2,1,0} reshape(Arg_93.94)
+  broadcast.614 = f32[1,1,1,512]{3,2,1,0} broadcast(reshape.613), dimensions={0,1,2,3}
+  reshape.615 = f32[1,512]{1,0} reshape(broadcast.614)
+  broadcast.616 = f32[1,4,4,512]{3,2,1,0} broadcast(reshape.615), dimensions={0,3}
+  add.617 = f32[1,4,4,512]{3,2,1,0} add(multiply.612, broadcast.616)
+  add.618 = f32[1,4,4,512]{3,2,1,0} add(add.617, call.571)
+  call.624 = f32[1,4,4,512]{3,2,1,0} call(add.618), to_apply=relu_2.619
+  constant.114 = f32[] constant(0)
+  reduce.629 = f32[1,512]{1,0} reduce(call.624, constant.114), dimensions={1,2}, to_apply=region_0.625
+  constant.104 = f32[] constant(16)
+  broadcast.105 = f32[1,512]{1,0} broadcast(constant.104), dimensions={}
+  divide.630 = f32[1,512]{1,0} divide(reduce.629, broadcast.105)
+  Arg_101.102 = f32[512,10]{1,0} parameter(101)
+  dot.631 = f32[1,10]{1,0} dot(divide.630, Arg_101.102), lhs_contracting_dims={1}, rhs_contracting_dims={0}
+  Arg_100.101 = f32[10]{0} parameter(100)
+  reshape.632 = f32[1,10]{1,0} reshape(Arg_100.101)
+  ROOT add.633 = f32[1,10]{1,0} add(dot.631, reshape.632)
+}
+
