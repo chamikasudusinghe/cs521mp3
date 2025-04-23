@@ -21,8 +21,8 @@ print("gradient wrt x1:", grad_x1)
 print("gradient wrt x2:", grad_x2)
 
 # output jaxprs IR
-print("\n=== jaxpr for dy_dx1 ===")
+print("\n jaxpr for dy_dx1 ")
 print(jax.make_jaxpr(dy_dx1)(x1_val, x2_val))
 
-print("\n=== jaxpr for dy_dx2 ===")
+print("\n jaxpr for dy_dx2 ")
 print(jax.make_jaxpr(dy_dx2)(x1_val, x2_val))
