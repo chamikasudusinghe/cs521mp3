@@ -4,7 +4,7 @@ import jax.numpy as jnp
 from flax.core import freeze
 from flax.training import train_state
 import optax
-from resnet18_flax import ResNet18
+from resnet18_jax import ResNet18
 
 def create_train_state(rng, model, variables):
     tx = optax.sgd(learning_rate=0.01)

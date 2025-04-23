@@ -5,7 +5,7 @@ import numpy as np
 from flax.core import freeze, unfreeze
 from flax.training import train_state
 import optax
-from resnet18_flax import ResNet18
+from resnet18_jax import ResNet18
 from load_pytorch_weights import convert_params, load_pytorch_npz
 
 def create_train_state(rng, model, variables):
